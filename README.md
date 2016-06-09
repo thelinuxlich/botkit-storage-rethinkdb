@@ -4,6 +4,8 @@ A RethinkDB storage module for Botkit.
 
 ## Usage
 
+You should have three tables already created in your RethinkDB database: botkit_teams, botkit_users and botkit_channels.
+
 Just require `botkit-storage-rethinkdb` and pass it a [rethinkdbdash config object](https://github.com/neumino/rethinkdbdash#importing-the-driver).
 Then pass the returned storage when creating your Botkit controller. Botkit will do the rest.
 
